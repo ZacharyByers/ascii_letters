@@ -2,11 +2,7 @@ require 'pry'
 require 'colorize'
 
 def ascii_hasher(input)
-  ascii_array = []
-
-  input.each { |char| ascii_array << { char => char.ord } }
-
-  ascii_array
+  ascii_array = input.map { |char| { char => char.ord } }
 end
 
 def sort?
@@ -58,7 +54,7 @@ while true
     puts sorter(output)
   end
 
-  puts "Continue? (y/n)"
+  puts "Continue? (y/n)".yellow
 
   choice = gets.strip.downcase
 
