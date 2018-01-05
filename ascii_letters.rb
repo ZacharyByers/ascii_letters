@@ -9,7 +9,7 @@ def ascii_hasher(input)
   ascii_array
 end
 
-def sort_menu
+def sort?
   while true
     puts "Sort? (y/n)".yellow
 
@@ -54,7 +54,7 @@ while true
 
   puts output
 
-  if sort_menu
+  if sort?
     puts sorter(output)
   end
 
