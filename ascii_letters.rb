@@ -29,8 +29,8 @@ end
 def sorter(arr)
   while true
     puts """
-    1. Ascending
-    2. Descending
+1. Ascending
+2. Descending
     """.yellow
 
     input = gets.to_i
